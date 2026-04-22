@@ -10,14 +10,21 @@
 - **Users:**  16 users (Alisson, Simon, Michael, Dani, Brian, David, Ilan, Juan, Julius, Philipp, Joshua, Rick, Moises, Fabian, Isaac, Kurt)
 ## 🛠️ Tech Stack
 - **Tools used:** Python, Pandas, NumPy, Jupyter Notebook
-- **Features used:** 
-  - **For Analysis in Excel:** Pivot tables, pivot fields pane.
-  -  **Creating visualizations in Excel and Cognos:** Using different types of charts (e.g line, bar, and column charts, heat map, and tree map) and KPIs. 
+- **Technique / Methods used:** 
+  - Pearson and Kendall Tau correlation for similarity
+  - Average, Least Misery, and Disagreement Aggregation
+  - WIAA (Weighted Individual Agreement Aggregation)
+  - MMR (Maximal Marginal Relevance)
+  - Cosine Similarity on genre matrices
+  - Greedy Grow method
+  - Counterfactual Explanation
 ## 🚀Steps / Workflow
-1. 🔍 **Data Analysis and Visualization using Excel:** 
-- Built Pivot Tables for data analysis.
-- Utilized Field Pane for filtering and sorting.
-- Created visualizations to present insights on cars Sold and profit made  .
+1. 🔍 **Part 1 - Collaborative Filtering:** 
+- Built user-item matrix from ratings dat
+- Computed Pearson correlation between users to measure linear similarity
+- Implemented Kendall Tau similarity using order of preference instead of absolute rank values
+- Built prediction function using weighted neighbor deviations formula
+- *Implemented group recommendations using:*
 2. 📈 **Dashboarding using Cognos for sales (1st Dashboard):**
 - Visualized profit made by dealers and quanity sold by car models using KPIs, bar, and column chart.
 3. 📈 **Dashboarding using Cognos for services (2nd Dashboard):**
