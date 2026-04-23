@@ -25,12 +25,12 @@
 - Implemented Kendall Tau similarity using order of preference instead of absolute rank values
 - Built prediction function using weighted neighbor deviations formula
 - **Implemented group recommendations using:**
--  Average Aggregation, used to maximize overall group satisfaction
--  Least Misery Aggregation, used to pick movies no one dislikes
--  Disagreement Aggregation, used to penalize movies with high standard deviation across group ratings
-2. 📈 **Dashboarding using Cognos for sales (1st Dashboard):**
+-  Average Aggregation (used to maximize overall group satisfaction)
+-  Least Misery Aggregation (used to pick movies no one dislikes)
+-  Disagreement Aggregation (used to penalize movies with high standard deviation across group ratings)
+2.  🔍 **Part 2 - WIAA (Novel Algorithm):**
 - Visualized profit made by dealers and quanity sold by car models using KPIs, bar, and column chart.
-3. 📈 **Dashboarding using Cognos for services (2nd Dashboard):**
+3.  🔍 **Dashboarding using Cognos for services (2nd Dashboard):**
 - Visualized recalls per car model and most affected systems using column chart and heat map.
 - Analyzed customer sentiments in reviews with a tree map.
 ## 🎯Results
