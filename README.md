@@ -54,9 +54,28 @@
 - WIAA successfully balances group fairness by dynamically adjusting user weights based on historical alignment
 - MMR ensures diverse recommendations across multiple rounds by penalising genre repetition
 ## 🛠️How to Run the Project
-Step 1- Donload python code parts folder (e.g., project part-1, project part-2, etc.)
+Step 1 — Clone or download the repository from GitHub.
 
-Step 2 - Run it in Jupyter notebook or text editor of your choice
+Step 2 — Ensure you have the following installed:
+   * Python 3.x
+   * Pandas
+   * NumPy
+   * Jupyter Notebook
+
+(Note:Install dependencies using: pip install pandas numpy jupyter)
+
+Step 3 — Download the dataset and place it 
+in the project folder.
+
+Step 4 — Open Jupyter Notebook and run the 
+parts in order:
+   * Project Part-1 first
+   * Project Part-2 second
+   * Project Part-3 third
+   * Project Part-4 last
+
+Note: Each part builds on the previous one, so
+run them in order for correct results.
 
 ## 🤝Contact
 💼 https://www.linkedin.com/in/skitij-kumar/ | 📧 Skitijkumar24@gmail.com
