@@ -29,21 +29,33 @@
 -  Least Misery Aggregation (used to pick movies no one dislikes)
 -  Disagreement Aggregation (used to penalize movies with high standard deviation across group ratings)
 2.  🔍 **Part 2 - WIAA (Novel Algorithm):**
-- Visualized profit made by dealers and quanity sold by car models using KPIs, bar, and column chart.
-3.  🔍 **Dashboarding using Cognos for services (2nd Dashboard):**
-- Visualized recalls per car model and most affected systems using column chart and heat map.
-- Analyzed customer sentiments in reviews with a tree map.
+- Studied existing SQUIRREL Framework strategies: SDAA, and SIAA
+- Developed WIAA (Weighted Individual Agreement Aggregation) as a novel extension of SIAA
+- Replaced SIAA's userDis with userAlign, instead of measuring how far behind a user is from the happiest person, WIAA measures how similar a user's ratings are to what the group historically chooses
+- userAlign formula penalizes persistent polarisation and rewards users who align with group taste group taste
+- Implemented iterative weight updating across recommendation rounds using lambda and rehab factor parameters
+3.  🔍 **Part 3 - Sequential Group Recommendations with MMR:**
+- Combined WIAA with MMR (Maximal Marginal Relevance) for sequential multi-round recommendations
+- Created genre matrix for all movies using one-hot encoding
+- Computed cosine similarity between movies to measure genre overlap
+- MMR scoring: Score = relevance − similarity to selected − similarity to history
+- Updated recommendation history each round to avoid repeating similar movies
+4.  🔍 **Part 4 - Greedy Grow and Counterfactual Explainability:**
+- Built Greedy Grow method to select top-K movies iteratively based on average group scores
+- Predicted missing ratings using cosine similarity between users
+- Final group score = average of real and predicted ratings combined
+- **Implemented counterfactual explanation system:**
+- Step 1: Removed single items to check if target movie disappears from top-K
+- Step 2: If no single item worked, I tried removing pairs of items
+- Step 3: If neither works, recommendation is classified as stable
 ## 🎯Results
-- The dealer with ID 1288 generated the highest profit.
-- The Hudson model was purchased more frequently than others.
-- The Beaufort model got more services or inspections.
-- The airbag in the Beaufort model failed most frequently.
+- Final output format: Movie ID, Predicted Group Rating, Counterfactual Explanation
+- Example: 593, 4.71, explanation: None → stable recommendation not influenced by any single or pair of items
+- WIAA successfully balances group fairness by dynamically adjusting user weights based on historical alignment
+- MMR ensures diverse recommendations across multiple rounds by penalising genre repetition
 ## 🛠️How to Run the Project
-### For Excel files
-Step 1- Open main project file folder.
-
-Step 2- Download the excel car sales analysis and dataset folder files and open the downloaded files in excel (or you can just watch 1 minute video using the given link in Demo section).
-
+Step 1- Donload python code parts folder (e.g., project part-1, project part-2, etc.)
+Step 2 - Run it in Jupyter notebook or text editor of your choice
 
 ### For IBM Cognos dashboard
 Step 1- Double click on the pdf or png file to see dashboards.
