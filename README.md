@@ -58,17 +58,5 @@ Step 1- Donload python code parts folder (e.g., project part-1, project part-2, 
 
 Step 2 - Run it in Jupyter notebook or text editor of your choice
 
-**}**
-## 🔗Demo
-- Watch Video of Car Sales Analsis wit Excel: (https://drive.google.com/file/d/12MTsZhqvh38RzZvnLFMA0WChfYSacvgQ/view?usp=sharing)
-
-- Here’s a preview of the interactive dashboard created with Cognos:
-
-Car Sales Dashboard
-![Car sales dashboard Screenshot](https://github.com/Skitij-Kumar/All-Data-Projects/blob/main/Car-Sales-Analysis-and-Visualization-Project/Main%20project%20files/Car%20sales%20dashboard%20Cognos%20Image.png)
-Cars Service Dashboard
-![Cars service](https://github.com/Skitij-Kumar/All-Data-Projects/blob/main/Car-Sales-Analysis-and-Visualization-Project/Main%20project%20files/Cars%20service%20dashboard%20Cognos%20Image.png)
-
-
 ## 🤝Contact
 💼 https://www.linkedin.com/in/skitij-kumar/ | 📧 Skitijkumar24@gmail.com
